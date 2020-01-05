@@ -1,45 +1,4 @@
-/*
-function play() {
-    if (!getCookie('again')) {
-        document.cookie = 'again=true';
-        msg = "About BaeJino.";
-    } else {
-        msg = "Welcome Again.";
-    }
-    comp = msg.length;
-    type();
-}
-function type() {
-    if (count <= comp) {
-        title_type.innerText = msg.substring(0, count);
-        count++;
-        setTimeout("type()", 110);
-    }
-}
-var count = 0
-play();
-function CheckBoxClick() {
-    var cate = document.getElementsByName('cate');
-    var cate_index = ['desktop', 'web'];
-    for (var i = 0; i < cate.length; i++) {
-        $('.' + cate_index[i]).css('display', 'none');
-    }
-    for (var i = 0; i < cate.length; i++) {
-        if (cate[i].checked) {
-            $('.' + cate_index[i]).css('display', 'block');
-        }
-    }
-}
-CheckBoxClick();
-function MoveSlide(target) {
-    $('html, body').animate({ scrollTop: $('#' + target).offset().top - 100 }, 500);
-}
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth() + 1;
-var yyyy = today.getFullYear();
-$('#now-date1').html(yyyy + (mm < 10 ? '.0' : '.') + mm + (dd < 10 ? '.0' : '.') + dd);
-*/
+
 var textArray = [
     '개발을 좋아하는',
     '선의를 좋아하는',

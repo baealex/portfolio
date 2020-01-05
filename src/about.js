@@ -5,6 +5,7 @@ import SectionProdcut from './section/product/main';
 import SectionSkill from './section/skill/main';
 import SectionContact from './section/contact/main';
 import './about.css';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -14,20 +15,20 @@ function About() {
   })
 
   return (
-    <div>
+    <section>
       <SectionIntro/>
       <SectionSocial/>
       <SectionProdcut/>
       <SectionSkill/>
       <SectionContact/>
-      <footer class="footer">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12 text-center font-ridi">Copyright © {(new Date().getFullYear())} BaeJino. </div>
+      <footer className="footer">
+          <div className="container">
+              <div className="row">
+                  <div className="col-md-12 text-center font-ridi">Copyright © {(new Date().getFullYear())} BaeJino. </div>
               </div>
           </div>
       </footer>
-    </div>
+    </section>
   );
 }
 
