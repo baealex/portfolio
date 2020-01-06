@@ -12,13 +12,13 @@ function SectionSkill() {
                         config={{
                             title: 'An indicator of interest and ability in programming languages.',
                             data: {
-                                labels: ['C', 'JavaScript', 'Java', 'Python', 'Rust'],
+                                labels: ['C', 'Java', 'Python', 'JavaScript', 'Rust'],
                                 datasets: [{
                                     label: 'ability',
-                                    data: [5, 3, 3, 7, 0],
+                                    data: [5, 3, 7, 3, 0],
                                 }, {
                                     label: 'interest',
-                                    data: [7, 6, 2, 10, 8],
+                                    data: [7, 2, 10, 7, 8],
                                 }],
                             },
                             options: {
