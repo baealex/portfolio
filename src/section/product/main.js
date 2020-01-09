@@ -6,6 +6,12 @@ function PurpleLink(props) {
     )
 }
 
+function SocialLink(props) {
+    return (
+        <img src={`https://img.shields.io/badge/${props.name}-${props.content}-lightgrey?logo=${props.logo}&style=social`} alt={props.logo + '-' + props.name}/>
+    )
+}
+
 class Product extends React.Component {
     static defaultProps = {
         image1: '기본 이미지',
@@ -80,8 +86,8 @@ function SectionProduct() {
             <div className="container fill-auto-display">
                 <h1 className="text-center font-bemin">Product.</h1>
                 <Product
-                    image1 = {require('./blex-1.png')}
-                    image2 = {require('./blex-2.png')}
+                    image1 = {require('./blex.png')}
+                    image2 = {require('./blex.png')}
                     imageDesc = 'BLEX 대체 이미지'
                     productName = 'BLOG EXPRESS ME'
                     productDesc = '가입형 블로그 서비스 개발'
@@ -99,9 +105,9 @@ function SectionProduct() {
                     }
                     productInfo = {
                         [
-                            <img src="https://img.shields.io/badge/star-1-lightgrey?logo=github&style=social"/>,
+                            <SocialLink logo="github" name="star" content="1"/>,
                             ' ',
-                            <img src="https://img.shields.io/badge/fork-0-lightgrey?logo=github&style=social"/>,
+                            <SocialLink logo="github" name="fork" content="0"/>,
                         ]
                     }
                     right = {true}
@@ -123,9 +129,9 @@ function SectionProduct() {
                     }
                     productInfo = {
                         [
-                            <img src="https://img.shields.io/badge/star-1-lightgrey?logo=github&style=social"/>,
+                            <SocialLink logo="github" name="star" content="1"/>,
                             ' ',
-                            <img src="https://img.shields.io/badge/fork-0-lightgrey?logo=github&style=social"/>,
+                            <SocialLink logo="github" name="fork" content="0"/>,
                         ]
                     }
                     right = {false}
@@ -149,9 +155,9 @@ function SectionProduct() {
                     }
                     productInfo = {
                         [
-                            <img src="https://img.shields.io/badge/star-1-lightgrey?logo=github&style=social"/>,
+                            <SocialLink logo="github" name="star" content="1"/>,
                             ' ',
-                            <img src="https://img.shields.io/badge/fork-0-lightgrey?logo=github&style=social"/>,
+                            <SocialLink logo="github" name="fork" content="0"/>,
                         ]
                     }
                     right = {true}
