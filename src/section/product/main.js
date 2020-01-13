@@ -107,7 +107,7 @@ function SectionProduct() {
                         [
                             <SocialLink logo="github" name="star" content="1"/>,
                             ' ',
-                            <SocialLink logo="github" name="fork" content="0"/>,
+                            <SocialLink logo="github" name="fork" content="1"/>,
                         ]
                     }
                     right = {true}
@@ -122,7 +122,7 @@ function SectionProduct() {
                     productTech = 'Python, Flask'
                     productLink = {
                         [
-                            <PurpleLink href="https://coderunner.baejino.com/ide" text="웹사이트"/>,
+                            <PurpleLink href="https://coderunner.baejino.com" text="웹사이트"/>,
                             ' / ',
                             <PurpleLink href="https://github.com/baealex/coding-on-web" text="소스 코드"/>,
                         ]
