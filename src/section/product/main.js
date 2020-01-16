@@ -113,18 +113,18 @@ function SectionProduct() {
                     right = {true}
                 />
                 <Product
-                    image1 = {require('./cow.png')}
-                    image2 = {require('./cow.png')}
-                    imageDesc = 'COW 대체 이미지'
-                    productName = 'Coding on web'
-                    productDesc = '개발 입문자를 위한 웹 코딩 IDE'
+                    image1 = {require('./skycode.png')}
+                    image2 = {require('./skycode.png')}
+                    imageDesc = 'skycode 대체 이미지'
+                    productName = 'SKYCODE'
+                    productDesc = '입문자를 위한 코딩 튜토리얼 실습 활성화'
                     productSize = '단독 풀사이클 개발 (진행률 : 50%)'
                     productTech = 'Python, Flask'
                     productLink = {
                         [
-                            <PurpleLink href="https://coderunner.baejino.com" text="웹사이트"/>,
+                            <PurpleLink href="https://skycode.baejino.com" text="웹사이트"/>,
                             ' / ',
-                            <PurpleLink href="https://github.com/baealex/coding-on-web" text="소스 코드"/>,
+                            <PurpleLink href="https://github.com/baealex/SkyCode" text="소스 코드"/>,
                         ]
                     }
                     productInfo = {
@@ -135,6 +135,28 @@ function SectionProduct() {
                         ]
                     }
                     right = {false}
+                />
+                <Product
+                    image1 = {require('./skychat.png')}
+                    image2 = {require('./skychat.png')}
+                    imageDesc = 'skychat 대체 이미지'
+                    productName = 'SKYCHAT'
+                    productDesc = '웹 실시간 채팅 어플리케이션'
+                    productSize = '단독 풀사이클 개발 (진행률 : 30%)'
+                    productTech = 'Node.js, Express, Socket.io'
+                    productLink = {
+                        [
+                            <PurpleLink href="https://github.com/baealex/SkyChat" text="소스 코드"/>,
+                        ]
+                    }
+                    productInfo = {
+                        [
+                            <SocialLink logo="github" name="star" content="0"/>,
+                            ' ',
+                            <SocialLink logo="github" name="fork" content="0"/>,
+                        ]
+                    }
+                    right = {true}
                 />
                 <Product
                     image1 = {require('./imgk.png')}
@@ -160,7 +182,7 @@ function SectionProduct() {
                             <SocialLink logo="github" name="fork" content="0"/>,
                         ]
                     }
-                    right = {true}
+                    right = {false}
                 />
             </div>
         </section>
