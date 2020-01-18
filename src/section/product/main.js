@@ -113,16 +113,16 @@ function SectionProduct() {
                     right = {true}
                 />
                 <Product
-                    image1 = {require('./skycode.png')}
-                    image2 = {require('./skycode.png')}
-                    imageDesc = 'skycode 대체 이미지'
-                    productName = 'SKYCODE'
+                    image1 = {require('./coderunner.png')}
+                    image2 = {require('./coderunner.png')}
+                    imageDesc = 'coderunner 대체 이미지'
+                    productName = 'Code Runner'
                     productDesc = '입문자를 위한 코딩 튜토리얼 실습 활성화'
                     productSize = '단독 풀사이클 개발 (진행률 : 50%)'
                     productTech = 'Python, Flask'
                     productLink = {
                         [
-                            <PurpleLink href="https://skycode.baejino.com" text="웹사이트"/>,
+                            <PurpleLink href="https://coderunner.baejino.com" text="웹사이트"/>,
                             ' / ',
                             <PurpleLink href="https://github.com/baealex/SkyCode" text="소스 코드"/>,
                         ]
