@@ -136,54 +136,6 @@ function SectionProduct() {
                     }
                     right = {false}
                 />
-                <Product
-                    image1 = {require('./skychat.png')}
-                    image2 = {require('./skychat.png')}
-                    imageDesc = 'skychat 대체 이미지'
-                    productName = 'SKYCHAT'
-                    productDesc = '웹 실시간 채팅 어플리케이션'
-                    productSize = '단독 풀사이클 개발 (진행률 : 30%)'
-                    productTech = 'Node.js, Express, Socket.io'
-                    productLink = {
-                        [
-                            <PurpleLink href="https://github.com/baealex/SkyChat" text="소스 코드"/>,
-                        ]
-                    }
-                    productInfo = {
-                        [
-                            <SocialLink logo="github" name="star" content="0"/>,
-                            ' ',
-                            <SocialLink logo="github" name="fork" content="0"/>,
-                        ]
-                    }
-                    right = {true}
-                />
-                <Product
-                    image1 = {require('./imgk.png')}
-                    image2 = {require('./imgk.png')}
-                    imageDesc = 'ImageKyll 대체 이미지'
-                    productName = 'ImageKyll'
-                    productDesc = '깃허브 블로그를 위한 이미지 도구'
-                    productSize = '단독 풀사이클 개발(진행률 : 85%)'
-                    productTech = 'C++, Qt Framework'
-                    productLink = {
-                        [
-                            <PurpleLink href="https://www.dropbox.com/sh/9ohue147wg19bfe/AACUQhTCeULfkpNuYi0hOBSda?dl=1" text="다운로드(x64)"/>,
-                            ' / ',
-                            <PurpleLink href="https://github.com/baealex/imagekyll" text="소스 코드"/>,
-                            ' / ',
-                            <PurpleLink href="https://github.com/baealex/imagekyll/blob/master/changelog.md" text="업데이트 내역"/>,
-                        ]
-                    }
-                    productInfo = {
-                        [
-                            <SocialLink logo="github" name="star" content="1"/>,
-                            ' ',
-                            <SocialLink logo="github" name="fork" content="0"/>,
-                        ]
-                    }
-                    right = {false}
-                />
             </div>
         </section>
     );
