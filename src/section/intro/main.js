@@ -49,7 +49,7 @@ class IntroText extends React.Component {
 
         return (
             <h3 className="hello-say font-ridi text-center">
-                안녕하세요! <span class="blink-text">{textArray[this.state.number]}</span> 개발자 배진오입니다.
+                안녕하세요! <span className="blink-text">{textArray[this.state.number]}</span> 개발자 배진오입니다.
             </h3>
         )
     }
