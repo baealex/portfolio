@@ -1,9 +1,9 @@
 import React from 'react';
-import SectionIntro from './section/intro/main';
-import SectionSocial from './section/social/main';
-import SectionProdcut from './section/product/main';
-import SectionSkill from './section/skill/main';
-import SectionContact from './section/contact/main';
+import SectionIntro from './section/intro';
+import SectionSocial from './section/social';
+import SectionProdcut from './section/product';
+import SectionSkill from './section/skill';
+import SectionContact from './section/contact';
 import './about.css';
 
 import AOS from 'aos';

@@ -128,7 +128,7 @@ function SectionProduct() {
                 ftech: 'django, PHP, FFmpeg, Amazon Lightsail, NginX, SQLite, jQuery, Bootstrap, CloudFlare, Google Fonts, Google Analytics, GitHub, Daum Mail',
                 link: [
                     {
-                        href: 'https://blex.kr',
+                        href: 'https://blex.me',
                         text: '웹사이트',
                     },
                     {
@@ -136,7 +136,7 @@ function SectionProduct() {
                         text: '소스 코드',
                     },
                     {
-                        href: 'https://blex.kr/thread/%EA%B0%9C%EB%B0%9C%EB%85%B8%ED%8A%B8',
+                        href: 'https://blex.me/thread/%EA%B0%9C%EB%B0%9C%EB%85%B8%ED%8A%B8',
                         text: '업데이트 내역',
                     }
                 ],
@@ -176,7 +176,7 @@ function SectionProduct() {
     return (
         <section>
             <div className="container fill-auto-display">
-                <h1 className="text-center font-bemin">Product.</h1>
+                <h1 className="text-center font-bemin" data-aos="fade-up">Product.</h1>
                 {
                     products.map((product, index) => {
                         return <Product
