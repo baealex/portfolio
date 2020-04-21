@@ -1,15 +1,11 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
+
+import GitHubButton from 'react-github-btn'
 
 function PurpleLink(props) {
     return (
-        <span><a className="vivid-purple" href={props.href}>{props.text}</a> / </span>
-    )
-}
-
-function SocialLink(props) {
-    return (
-        <img src={`https://img.shields.io/badge/${props.name}-${props.content}-lightgrey?logo=${props.logo}&style=social`} alt={props.logo + '-' + props.name}/>
+        <><a className="vivid-purple" href={props.href}>{props.text}</a> / </>
     )
 }
 
@@ -42,15 +38,6 @@ class Product extends React.Component {
             starCount: 0,
             forkCount: 0,
         }
-    }
-
-    async componentDidMount() {
-        let url = `https://api.github.com/repos/${this.props.github.username}/${this.props.github.reponame}`;
-        let response = await axios.get(url);
-        this.setState({
-            starCount: response.data.stargazers_count,
-            forkCount: response.data.forks_count,
-        });
     }
 
     hoverOn = () => {
@@ -91,17 +78,18 @@ class Product extends React.Component {
                             {!this.state.isHover ? prod.tech : (prod.ftech === 'empty') ? prod.tech : prod.ftech}
                             {!this.props.right ? " : 기술" : ""}
                         </li>
-                        <li>
+                        <li className="inner-list">
                             {
                                 prod.link.map((link, index) => {
                                     return <PurpleLink href={link.href} text={link.text} key={index}/>
                                 })
                             }
                         </li>
-                        <li>
-                            <SocialLink key={0} logo="github" name="star" content={this.state.starCount}/> <SocialLink key={1} logo="github" name="fork" content={this.state.forkCount}/>
-                        </li>
                     </ul>
+                    <div className="gh-buttons">
+                        <GitHubButton href={`https://github.com/${this.props.github.username}/${this.props.github.reponame}`} data-icon="octicon-star" data-show-count="true" aria-label={`Star ${this.props.github.username}/${this.props.github.reponame} on GitHub`}>Star</GitHubButton>
+                        <GitHubButton href={`https://github.com/${this.props.github.username}/${this.props.github.reponame}/fork`} data-icon="octicon-repo-forked" data-show-count="true" aria-label={`Fork ${this.props.github.username}/${this.props.github.reponame} on GitHub`}>Fork</GitHubButton>
+                    </div>
                 </div>
             </div>
         )
@@ -143,35 +131,6 @@ function SectionProduct() {
             },
             right: true,
         },
-        {
-            github: {
-                username: 'baealex',
-                reponame: 'code-runner',
-            },
-            image: {
-                base: require('./coderunner.png'),
-                hover: require('./coderunner.png'),
-                desc: 'coderunner 대체 이미지',
-            },
-            prod: {
-                name: 'Code Runner',
-                desc: '입문자를 위한 코딩 튜토리얼 실습 활성화',
-                size: '풀사이클 개발 (진행률 : 50%)',
-                tech: 'Python, Flask',
-                ftech: 'Python, Flask',
-                link: [
-                    {
-                        href: 'https://coderunner.baejino.com',
-                        text: '웹사이트',
-                    },
-                    {
-                        href: 'https://github.com/baealex/SkyCode',
-                        text: '소스 코드',
-                    },
-                ],
-            },
-            right: false,
-        },
     ];
     return (
         <section>
@@ -188,6 +147,9 @@ function SectionProduct() {
                         />
                     })
                 }
+                <div className="bae-card btn-block text-center c-pointer font-ridi">
+                    더 보기
+                </div>
             </div>
         </section>
     );

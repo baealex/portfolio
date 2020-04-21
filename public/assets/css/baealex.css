@@ -66,6 +66,7 @@ a.vivid-purple {
 }
 .video-cover { object-fit: cover; }
 .image-fixed { background-attachment: fixed; }
+.c-pointer { cursor: pointer; }
 
 @keyframes rainbow {
     0%   { border: 2px solid #f00; }
