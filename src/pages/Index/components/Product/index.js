@@ -106,8 +106,8 @@ function Product() {
                 reponame: 'BLEX',
             },
             image: {
-                base: require('./blex.png'),
-                hover: require('./blex.png'),
+                base: require('./resource/blex.png'),
+                hover: require('./resource/blex.png'),
                 desc: 'BLEX 대체 이미지',
             },
             prod: {
@@ -149,8 +149,8 @@ function Product() {
                         />
                     })
                 }
-                <Link className="more" to="/prod">
-                    <div className="bae-card btn-block text-center c-pointer font-ridi">
+                <Link className="more" to="/product">
+                    <div className="bae-card btn-block text-center c-pointer font-ridi" data-aos="fade-up">
                         더 보기
                     </div>
                 </Link>

@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 
 import Index from './pages/Index';
 import Products from './pages/Products';
+import Palette from './pages/Palette';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import './bootstrap.min.css'
@@ -22,8 +24,10 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
+        <Navbar/>
         <Route exact path="/" component={Index}/>
-        <Route exact path="/prod" component={Products}/>
+        <Route exact path="/product" component={Products}/>
+        <Route exact path="/palette" component={Palette}/>
         <Footer/>
       </BrowserRouter>
     );
