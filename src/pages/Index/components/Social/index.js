@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SectionSocial() {
+function Social() {
     return (
         <section>
             <div className="container fill-half-display pt-5" data-aos="fade-right">
@@ -15,4 +15,4 @@ function SectionSocial() {
     );
 }
 
-export default SectionSocial;
+export default Social;

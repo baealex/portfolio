@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SectionContact() {
+function Contact() {
     return (
         <section>
             <div className="container fjqill-half-display pt-10" data-aos="fade-right">
@@ -13,4 +13,4 @@ function SectionContact() {
     );
 }
 
-export default SectionContact;
+export default Contact;

@@ -55,7 +55,7 @@ class IntroText extends React.Component {
     }
 }
 
-function SectionIntro() {
+function Intro() {
     const backgroundAvatar = {
         backgroundImage:'url(https://avatars2.githubusercontent.com/u/35596687)'
     };
@@ -68,4 +68,4 @@ function SectionIntro() {
     );
 }
 
-export default SectionIntro;
+export default Intro;

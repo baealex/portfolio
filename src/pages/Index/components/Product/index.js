@@ -1,7 +1,9 @@
 import React from 'react';
-import axios from 'axios';
 
 import GitHubButton from 'react-github-btn'
+import { Link } from 'react-router-dom';
+
+import './style.scss';
 
 function PurpleLink(props) {
     return (
@@ -9,7 +11,7 @@ function PurpleLink(props) {
     )
 }
 
-class Product extends React.Component {
+class Items extends React.Component {
     static defaultProps = {
         gitgub: {
             username: '깃허브 아이디',
@@ -96,7 +98,7 @@ class Product extends React.Component {
     }
 }
 
-function SectionProduct() {
+function Product() {
     const products = [
         {
             github: {
@@ -138,7 +140,7 @@ function SectionProduct() {
                 <h1 className="text-center font-bemin" data-aos="fade-up">Product.</h1>
                 {
                     products.map((product, index) => {
-                        return <Product
+                        return <Items
                             github={product.github}
                             image={product.image}
                             prod={product.prod}
@@ -147,12 +149,14 @@ function SectionProduct() {
                         />
                     })
                 }
-                <div className="bae-card btn-block text-center c-pointer font-ridi">
-                    더 보기
-                </div>
+                <Link className="more" to="/prod">
+                    <div className="bae-card btn-block text-center c-pointer font-ridi">
+                        더 보기
+                    </div>
+                </Link>
             </div>
         </section>
     );
 }
 
-export default SectionProduct;
+export default Product;
