@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,6 +9,8 @@ import Products from './pages/Products';
 import Palette from './pages/Palette';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import NoMatch from './components/NoMatch';
+import ScrollToTop from './components/ScrollToTop';
 
 import './bootstrap.min.css'
 import './baealex.scss'
@@ -24,11 +26,16 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Navbar/>
-        <Route exact path="/" component={Index}/>
-        <Route exact path="/product" component={Products}/>
-        <Route exact path="/palette" component={Palette}/>
-        <Footer/>
+        <ScrollToTop>
+          <Navbar/>
+            <Switch>
+              <Route exact path="/" component={Index}/>
+              <Route exact path="/product" component={Products}/>
+              <Route exact path="/palette" component={Palette}/>
+              <Route component={NoMatch}/>
+            </Switch>
+          <Footer/>
+        </ScrollToTop>
       </BrowserRouter>
     );
   }

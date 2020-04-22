@@ -90,12 +90,12 @@ footer {
     height: 0;
   }
   30% {
-    top: calc(25vh + 225px);
+    top: calc(50vh + 100px);
     width: 25px;
     height: 25px;
   }
   100% {
-    top: 25vh;
+    top: 50vh;
     width: 250px;
     height: 250px;
   }
@@ -116,9 +116,9 @@ footer {
 }
 .hello-face {
   position: absolute;
-  top: 25vh;
+  top: 50vh;
   left: 50vw;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 250px;
   height: 250px;
   border-radius: 100%;
@@ -127,7 +127,7 @@ footer {
   position: absolute;
   font-size: 1.2rem;
   left: 50vw;
-  top: calc(25vh + 300px);
+  top: calc(50vh + 160px);
   transform: translateX(-50%);
   word-break: keep-all;
 }
