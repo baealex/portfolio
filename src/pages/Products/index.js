@@ -24,49 +24,49 @@ function Products() {
             image: require('./resource/kc.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/korcoding',
             title: 'KorCoding',
-            subtitle: '한글 코딩 라이브러리',
+            subtitle: 'Korean Coding Library',
         },
         {
             image: require('./resource/txwg.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/textwidget',
             title: 'TextWidget',
-            subtitle: '데스크톱 텍스트 위젯',
+            subtitle: 'Windows Text Widget',
         },
         {
             image: require('./resource/sk2.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/skynote2',
             title: 'SkyNote2',
-            subtitle: '데스크톱 메모장',
+            subtitle: 'Windows Notepad',
         },
         {
             image: require('./resource/iuc.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/iucalendar',
             title: 'IUCalendar',
-            subtitle: '데스크톱 달력 위젯',
+            subtitle: 'Windows Calendar Widget',
         },
         {
             image: require('./resource/np.png'),
             href: 'https://blex.me/thread/toy-project/@baealex/notephpad',
             title: 'NotePHPad',
-            subtitle: '웹 메모장',
+            subtitle: 'Web Notepad',
         },
         {
             image: require('./resource/gbgk.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/goodbydpi-gui-korean',
-            title: 'GoodBeyDPI',
-            subtitle: '데스크톱 HTTPS 우회 유틸',
+            title: 'GoodBeyDPI Korean',
+            subtitle: 'Windows HTTPS Bypass Utility Localize',
         },
         {
             image: require('./resource/ic.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/imagecompressor',
             title: 'ImageCompressor',
-            subtitle: '데스크톱 이미지 압축기',
+            subtitle: 'Windows Image(PNG, JPG) Compressor',
         },
         {
             image: require('./resource/imjk.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/imagekyll',
             title: 'imagekyll',
-            subtitle: '데스크톱 Jekyll 이미지 유틸',
+            subtitle: 'Windows Jekyll Image Utility',
         },
         {
             image: require('../Index/components/Product/resource/blex.png'),
@@ -77,8 +77,8 @@ function Products() {
         {
             image: require('./resource/cr.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/coderunner',
-            title: 'CodeRunner',
-            subtitle: '웹 IDE',
+            title: '코딩 도우미',
+            subtitle: 'Web Code Runner',
         },
         {
             image: require('./resource/kwc.jpg'),
@@ -90,8 +90,14 @@ function Products() {
             image: require('./resource/snsnc.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/snsnc',
             title: 'SNSNC',
-            subtitle: '소셜 닉네임 유효성 조회 사이트',
+            subtitle: 'Social Network Service Nickname Checker',
         },
+        {
+            image: require('./resource/nd.png'),
+            href: 'https://blex.me/thread/toy-project/@baealex/노션-도우미',
+            title: '노션 도우미',
+            subtitle: 'Guide, Google Analytics',
+        }
     ]
     const box = prodList.map((prod, idx) => 
         (<Box key={idx} prod={prod}/>)
