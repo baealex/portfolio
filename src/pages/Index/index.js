@@ -11,9 +11,6 @@ function Index() {
         <>
             <Intro/>
             <Social/>
-            <Prodcut/>
-            <Skill/>
-            <Contact/>
         </>
     )
 }

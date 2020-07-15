@@ -75,21 +75,21 @@ function Products() {
             subtitle: 'BLOG Service',
         },
         {
-            image: require('./resource/cr.jpg'),
-            href: 'https://blex.me/thread/toy-project/@baealex/coderunner',
-            title: '코딩 도우미',
-            subtitle: 'Web Code Runner',
-        },
-        {
             image: require('./resource/kwc.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/skychat',
             title: 'SkyChat',
             subtitle: 'Kakao Style Real-Time Chat',
         },
         {
+            image: require('./resource/cr.jpg'),
+            href: 'https://blex.me/thread/toy-project/@baealex/coderunner',
+            title: '코딩 도우미',
+            subtitle: 'Web Code Runner',
+        },
+        {
             image: require('./resource/snsnc.jpg'),
             href: 'https://blex.me/thread/toy-project/@baealex/snsnc',
-            title: 'SNSNC',
+            title: '작명 도우미',
             subtitle: 'Social Network Service Nickname Checker',
         },
         {

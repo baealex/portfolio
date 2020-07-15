@@ -27,13 +27,10 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <ScrollToTop>
-          <Navbar/>
-            <Switch>
-              <Route exact path="/" component={Index}/>
-              <Route exact path="/product" component={Products}/>
-              <Route exact path="/palette" component={Palette}/>
-              <Route component={NoMatch}/>
-            </Switch>
+          <Switch>
+            <Route exact path="/" component={Index}/>
+            <Route component={NoMatch}/>
+          </Switch>
           <Footer/>
         </ScrollToTop>
       </BrowserRouter>
