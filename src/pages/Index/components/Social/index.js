@@ -3,7 +3,7 @@ import React from 'react';
 function Social() {
     return (
         <section>
-            <div className="container fill-half-display pt-5" data-aos="fade-right">
+            <div className="container fill-half-display pt-10" data-aos="fade-right">
                 <ul className="social-link text-center">
                     <h1 className="font-bemin">Social.</h1>
                     <li><a href="https://blex.me/@baealex">blog</a></li>

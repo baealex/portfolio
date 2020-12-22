@@ -33,12 +33,6 @@ function Products() {
             subtitle: 'Windows Text Widget',
         },
         {
-            image: require('./resource/sk2.jpg'),
-            href: 'https://github.com/baealex/SkyNote',
-            title: 'SkyNote2',
-            subtitle: 'Windows Notepad',
-        },
-        {
             image: require('./resource/iuc.jpg'),
             href: 'https://github.com/baealex/IUCalendar',
             title: 'IUCalendar',
@@ -47,8 +41,8 @@ function Products() {
         {
             image: require('./resource/np.png'),
             href: 'https://github.com/baealex/SkyNote',
-            title: 'SkyNote3',
-            subtitle: 'Web Notepad',
+            title: 'SkyNote',
+            subtitle: 'Notepad Website',
         },
         {
             image: require('./resource/imjk.jpg'),

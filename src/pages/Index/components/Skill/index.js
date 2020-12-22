@@ -15,7 +15,7 @@ function Skill() {
                                 labels: ['default', 'C++', 'Python', 'JavaScript', 'Rust'],
                                 datasets: [{
                                     label: 'ability',
-                                    data: [0, 5, 7, 4, 2],
+                                    data: [0, 3, 7, 5, 2],
                                 }, {
                                     label: 'interest',
                                     data: [10, 7, 10, 7, 8],

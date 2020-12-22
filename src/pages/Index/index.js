@@ -11,6 +11,7 @@ function Index() {
         <>
             <Intro/>
             <Social/>
+            <Prodcut/>
         </>
     )
 }

@@ -7,7 +7,7 @@ import './style.scss';
 
 function PurpleLink(props) {
     return (
-        <><a className="vivid-purple" href={props.href}>{props.text}</a> / </>
+        <a className="vivid-purple" href={props.href}>{props.text}</a>
     )
 }
 
@@ -83,7 +83,7 @@ class Items extends React.Component {
                         <li className="inner-list">
                             {
                                 prod.link.map((link, index) => {
-                                    return <PurpleLink href={link.href} text={link.text} key={index}/>
+                                    return <><PurpleLink href={link.href} text={link.text} key={index}/>{index != prod.link.length - 1 ? ' / ' : ''}</>
                                 })
                             }
                         </li>
@@ -113,9 +113,9 @@ function Product() {
             prod: {
                 name: 'BLOG EXPRESS ME',
                 desc: '블로그 서비스 개발',
-                size: '풀사이클 개발 (진행률 : 90%)',
-                tech: 'django, PHP, FFmpeg 외 10',
-                ftech: 'django, PHP, FFmpeg, Amazon Lightsail, NginX, SQLite, jQuery, Bootstrap, CloudFlare, Google Fonts, Google Analytics, GitHub, Daum Mail',
+                size: '풀사이클 개발',
+                tech: 'Django, NextJS, FFmpeg 외 9',
+                ftech: 'Django, NextJS, FFmpeg, Amazon Lightsail, NginX, SQLite, Bootstrap, CloudFlare, Google Fonts, Google Analytics, GitHub, Daum Mail',
                 link: [
                     {
                         href: 'https://blex.me',
@@ -123,11 +123,11 @@ function Product() {
                     },
                     {
                         href: 'https://github.com/baealex/BLEX',
-                        text: '소스 코드',
+                        text: '깃허브',
                     },
                     {
-                        href: 'https://blex.me/thread/%EA%B0%9C%EB%B0%9C%EB%85%B8%ED%8A%B8',
-                        text: '업데이트 내역',
+                        href: 'https://www.notion.so/9b8b5cac32d947aa9396d9f57f2410be',
+                        text: '개발 플래닝',
                     }
                 ],
             },
