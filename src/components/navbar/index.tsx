@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './style.scss';
-
-function Navbar() {
+export default function Navbar() {
     return(
-        <nav className="fixed-top navbar navbar-expand navbar-light bg-buti">
+        <nav className="fixed-top navbar navbar-expand navbar-light bg-clarity">
             <div className="container">
                 <Link to="/" className="navbar-brand">
                     <img src="/assets/images/logo.png" alt="BaeJino"/>
@@ -26,5 +24,3 @@ function Navbar() {
         </nav>
     )
 }
-
-export default Navbar;

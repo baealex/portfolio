@@ -2,7 +2,7 @@ import React from 'react';
 import chartXkcd from 'chart.xkcd';
 import { Line/*, Bar, Pie, XY*/ } from "chart.xkcd-react"
 
-function Skill() {
+export default function Skill() {
     return (
         <section>
             <div className="container">
@@ -32,5 +32,3 @@ function Skill() {
         </section>
     );
 }
-
-export default Skill;

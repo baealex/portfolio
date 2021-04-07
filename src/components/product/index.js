@@ -83,7 +83,7 @@ class Items extends React.Component {
                         <li className="inner-list">
                             {
                                 prod.link.map((link, index) => {
-                                    return <><PurpleLink href={link.href} text={link.text} key={index}/>{index != prod.link.length - 1 ? ' / ' : ''}</>
+                                    return <><PurpleLink href={link.href} text={link.text} key={index}/>{index !== prod.link.length - 1 ? ' / ' : ''}</>
                                 })
                             }
                         </li>
@@ -106,8 +106,8 @@ function Product() {
                 reponame: 'BLEX',
             },
             image: {
-                base: require('./resource/blex.png'),
-                hover: require('./resource/blex.png'),
+                base: '/assets/resource/blex.png',
+                hover: '/assets/resource/blex.png',
                 desc: 'BLEX 대체 이미지',
             },
             prod: {

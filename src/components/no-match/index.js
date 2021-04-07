@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.scss';
 
-function NoMatch() {
+export default function NoMatch() {
     return(
         <div className="page-404">
             <div className="text font-ridi">
@@ -11,5 +11,3 @@ function NoMatch() {
         </div>
     )
 }
-
-export default NoMatch;
