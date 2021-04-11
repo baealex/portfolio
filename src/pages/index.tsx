@@ -1,8 +1,9 @@
 import React from 'react'; 
 
-import Intro from '../components/intro';
-import Social from '../components/social';
-import Prodcut from '../components/product';
+import Intro from '@components/intro';
+import Social from '@components/social';
+import Prodcut from '@components/product';
+import Contact from '@components/contact';
 
 export default function Index() {
     return (
@@ -10,6 +11,7 @@ export default function Index() {
             <Intro/>
             <Social/>
             <Prodcut/>
+            <Contact/>
         </>
     )
 }
