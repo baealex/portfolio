@@ -1,9 +1,5 @@
 import React from 'react';
-
-import GitHubButton from 'react-github-btn'
-import { Link } from 'react-router-dom';
-
-import './style.scss';
+import Link from 'next/link';
 
 function PurpleLink(props) {
     return (
@@ -88,10 +84,6 @@ class Items extends React.Component {
                             }
                         </li>
                     </ul>
-                    <div className="gh-buttons">
-                        <GitHubButton href={`https://github.com/${this.props.github.username}/${this.props.github.reponame}`} data-icon="octicon-star" data-show-count="true" aria-label={`Star ${this.props.github.username}/${this.props.github.reponame} on GitHub`}>Star</GitHubButton>
-                        <GitHubButton href={`https://github.com/${this.props.github.username}/${this.props.github.reponame}/fork`} data-icon="octicon-repo-forked" data-show-count="true" aria-label={`Fork ${this.props.github.username}/${this.props.github.reponame} on GitHub`}>Fork</GitHubButton>
-                    </div>
                 </div>
             </div>
         )
@@ -149,10 +141,23 @@ function Product() {
                         />
                     })
                 }
-                <Link className="more" to="/product">
-                    <div className="bae-card btn-block text-center c-pointer font-ridi" data-aos="fade-up">
-                        더 보기
-                    </div>
+                <Link href="/product">
+                    <a className="more">
+                        <div className="bae-card btn-block text-center c-pointer font-ridi" data-aos="fade-up">
+                            더 보기
+                        </div>
+                        <style jsx>{`
+                            div {
+                                color: #000;
+                                text-decoration: none;
+                                
+                                &:hover {
+                                    color: #777;
+                                    text-decoration: none;
+                                }
+                            }
+                        `}</style>
+                    </a>
                 </Link>
             </div>
         </section>

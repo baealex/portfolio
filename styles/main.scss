@@ -3,11 +3,93 @@
     padding: 0;
 }
 
-#title_type {
-    color: #fff;
-    padding-top: 48vh;
-    text-align: center;
+.deep-purple,    .deep-purple:hover    { color: #474787; }
+.shallow-purple, .shallow-purple:hover { color: #515199; }
+.minimal-purple, .minimal-purple:hover { color: #706fd3; }
+.white-purple,   .white-purple:hover   { color: #eeeeff; }
+.live-purple,    .live-purple:hover    { color: #9b59b6; }
+.grape-purple,   .grape-purple:hover   { color: #8e44ad; }
+.vivid-purple,   .vivid-purple:hover   { color: #5800ff; }
+
+a.deep-purple,
+a.shallow-purple,
+a.minimal-purple,
+a.white-purple,
+a.live-purple,
+a.grape-purple,
+a.vivid-purple {
+	text-decoration: none;
 }
+
+.bg-deep-purple    { background-color: #474787; }
+.bg-shallow-purple { background-color: #515199; }
+.bg-minimal-purple { background-color: #706fd3; }
+.bg-white-purple   { background-color: #eeeeff; }
+.bg-live-purple    { background-color: #9b59b6; }
+.bg-grape-purple   { background-color: #8e44ad; }
+.bg-vivid-purple   { background-color: #5800ff; }
+
+.ember{ color: #fd0; }
+
+.fill-full-display { width: 100%; height: 100vh; }
+.fill-half-display { width: 100%; height: 50vh; }
+.fill-auto-display { width: 100%; height: auto; }
+.fill-inner { width: 100%; height: 100%; }
+.fill-image {
+	background-color: #474787;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.image-mask-dark {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: relative;
+}
+.image-mask-dark > * {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image-mask-white {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.5);
+    position: relative;
+}
+.image-mask-white > * {
+    position: absolute;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-cover { object-fit: cover; }
+.image-fixed { background-attachment: fixed; }
+.c-pointer { cursor: pointer; }
+
+@keyframes rainbow {
+    0%   { border: 2px solid #f00; }
+    15%  { border: 2px solid #f80; }
+    30%  { border: 2px solid #ff0; }
+    45%  { border: 2px solid #0f0; }
+    60%  { border: 2px solid #08f; }
+    75%  { border: 2px solid #009; }
+    90%  { border: 2px solid #90f; }
+    100% { border: 2px solid #f00; }
+}
+.rainborder {
+    position: fixed;
+	z-index: 1030;
+    animation: rainbow 10s infinite 0s;
+}
+.l-line { top: 0; left: 0; width: 0; height: calc(100vh); }
+.r-line { top: 0; right: 0; width: 0; height: calc(100vh); }
+.t-line { top: 0; left: 0; width: calc(100vw); height: 0; }
+.b-line { bottom: 0; left: 0; width: calc(100vw); height: 0; }
 
 .ns {
     font-family: 'Noto Sans KR', sans-serif;
@@ -291,4 +373,98 @@ footer {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.75);
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+.tile {
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    transition: all ease 0.5s 0s;
+    font-family: 'Mansalva', cursive;
+
+    &:hover {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 1200px) and (min-width: 760px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 760px){
+        grid-template-columns: 1fr;
+    }
+    .box {
+        position: relative;
+        width: 100%;
+        height: 45vh;
+        color: #fff;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: .5;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.2s ease;
+        }
+
+        .text {
+            position: absolute;
+            width: 100%;
+            top: calc(50% - 40px);
+            z-index: 10;
+        }
+
+        .title, .subtitle {
+            color: #fff;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2.2em;
+        }
+        
+        .subtitle {
+            font-size: 1em;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 0;
+            }
+
+            img {
+                transform: scale(1.5);
+            }
+
+            .text {
+                z-index: 0;
+                opacity: 0;
+            }
+        }
+    }
 }

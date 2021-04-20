@@ -1,14 +1,16 @@
 import React from 'react';
 
-import './style.scss';
-
-function Tile(props) {
+function Tile(props: {
+    value: string;
+    name: string;
+    dark?: boolean;
+}) {
     const styles = {
-        backgroundColor: '#' + props.color.value,
-    }
-    styles['color'] = props.color.dark ? '#000' : '';
+        backgroundColor: '#' + props.value,
+        color: props.dark ? '#000' : '',
+    };
 
-    const copyToClipboard = (val) => {
+    const copyToClipboard = (val: string) => {
         var t = document.createElement("textarea");
         document.body.appendChild(t);
         t.value = val;
@@ -19,10 +21,17 @@ function Tile(props) {
     }
 
     return(
-        <div className="tile bemin" style={styles} onClick={() => copyToClipboard(props.color.value)}>{props.color.name}</div>
+        <div
+            className="tile bemin"
+            style={styles}
+            onClick={() => copyToClipboard(props.value)}
+        >
+            {props.name}
+        </div>
     )
 }
-function Palette() {
+
+export default function Palette() {
     const colorList = [
         {
             value: '474787',
@@ -55,7 +64,7 @@ function Palette() {
         },
     ]
     const tile = colorList.map((color, idx) => 
-        (<Tile key={idx} color={color}/>)
+        (<Tile key={idx} {...color}/>)
     );
     return(
         <div className="color">
@@ -63,5 +72,3 @@ function Palette() {
         </div>
     )
 }
-
-export default Palette;

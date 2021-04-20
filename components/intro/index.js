@@ -1,15 +1,10 @@
 import React from 'react';
 
-function getCookie(name) {
-    var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-    return value ? value[2] : null;
-}
-
 class IntroText extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            number: getCookie('index') ? parseInt(getCookie('index')) : 0,
+            number: 0,
             lastIndex: 3,
         }
     }
@@ -44,8 +39,6 @@ class IntroText extends React.Component {
             '파이썬을 좋아하는',
             '보라색을 좋아하는',
         ];
-
-        document.cookie = 'index=' + this.state.number;
 
         return (
             <h3 className="hello-say font-ridi text-center">
