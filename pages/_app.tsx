@@ -17,7 +17,6 @@ class Main extends App<AppProps> {
             <>
                 <Head>
                     <title>I'm BaeJino</title>
-                    <link rel="icon" href="/favicon.ico"/>
                     <meta name="theme-color" content="#474787"/>
                     <meta name="application-name" content="baejino"/>
                     <meta name="msapplication-TileColor" content="#474787"/>
@@ -26,6 +25,9 @@ class Main extends App<AppProps> {
                         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
                         crossOrigin="anonymous"
                     />
+                    <link rel="icon" href="/favicon.ico"/>
+                    <link rel="icon" href="/assets/images/logo.png"/>
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mansalva&display=swap"/>
                 </Head>
 
                 <TopNavitaion/>
