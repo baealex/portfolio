@@ -1,0 +1,13 @@
+@import 'var';
+
+.social {
+    div {
+        display: inline-block;
+        margin: 4px;
+        font-size: $FONT_SIZE_NORMAL;
+
+        a {
+            color: $COLOR_PURPLE_VIVID;
+        }
+    }
+}

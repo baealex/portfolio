@@ -1,0 +1,16 @@
+@import 'var';
+
+.card {
+    @include SHADOW_PRIMARY;
+    width: 100%;
+    display: block;
+    background: #fff;
+
+    &.isRounded {
+        border-radius: 8px;
+
+        :global(img) {
+            border-radius: 8px 8px 0 0;
+        }
+    }
+}

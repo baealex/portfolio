@@ -1,0 +1,10 @@
+@import 'var';
+
+.badge {
+    background: $COLOR_PURPLE_WHITE;
+    font-size: $FONT_SIZE_MINI;
+    display: inline-block;
+    margin: 8px 4px;
+    padding: 8px 16px;
+    border-radius: 100px;
+}

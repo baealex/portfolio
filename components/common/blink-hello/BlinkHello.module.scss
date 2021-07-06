@@ -1,0 +1,23 @@
+@import 'var';
+
+@keyframes blink-hello {
+    0% {
+        color: rgba(0, 0, 0, 0);
+        box-shadow: inset 0 rgba(0, 0, 0, 0);
+    }
+
+    50% {
+        color: rgba(0, 0, 0, 1);
+        box-shadow: inset 0 ($FONT_SIZE_BIG * -1.3) 0 rgba(200, 200, 255, 1);
+    }
+
+    100% {
+        color: rgba(0, 0, 0, 0);
+        box-shadow: inset 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.blink-hello {
+    color: rgba(0, 0, 0, 0);
+    animation: blink-hello 4s infinite;
+}
