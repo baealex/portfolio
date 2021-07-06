@@ -25,7 +25,6 @@ export default function Home() {
                         <div className="my-5 pb-5">
                             <Text fontSize="small" fontWeight={400}>
                                 서울에서 일하고 있는 2년차 웹 개발자입니다.
-                                크로스 플랫폼 앱(Qt)을 만들다 웹에 눈뜨게 되었습니다.
                                 무형의 아이디어가 시각적으로 실현되는 과정을 즐거워 합니다.
                                 기록하는 것을 좋아하여 블로그에 많은 관심을 가지고 있습니다.{' '}
                                 <a className="vivid-purple" href="https://blex.me/@baealex/pythonic%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">
@@ -66,7 +65,7 @@ export default function Home() {
                                         ),
                                         doings: [
                                             'Object Detection을 활용한 캡차 솔루션 구현',
-                                            '이미지 유사도를 활용한 마우스 키패드 솔루션 구현',
+                                            '이미지 유사도를 측정하여 마우스 키패드 솔루션 구현',
                                             '실시간 스크래핑 오류 알리미(GrayLog + Slack) 구현',
                                             '신규 모듈 개발 및 기존 모듈 유지보수'
                                         ],
