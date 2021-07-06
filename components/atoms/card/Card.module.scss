@@ -1,7 +1,7 @@
 @import 'var';
 
 .card {
-    @include MAIN_SHADOW;
+    @include SHADOW_PRIMARY;
     width: 100%;
     display: block;
     background: #fff;

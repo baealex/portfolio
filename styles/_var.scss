@@ -1,6 +1,15 @@
-$COLOR_DEFAULT_PRIMARY: #8c00ff;
-$COLOR_DEFAULT_SECONDARY: #9c56d4;
-$COLOR_DEFAULT_POINT: #b181da;
+$COLOR_PURPLE_DEEP: #474787;
+$COLOR_PURPLE_SHALLOW: #515199;
+$COLOR_PURPLE_MINIMAL: #706fd3;
+$COLOR_PURPLE_WHITE: #eeeeff;
+$COLOR_PURPLE_LIVE: #9b59b6;
+$COLOR_PURPLE_GRAPE: #8e44ad;
+$COLOR_PURPLE_VIVID: #5800ff;
+$COLOR_EMBER: #ffdd00;
+
+$COLOR_DEFAULT_PRIMARY: $COLOR_PURPLE_VIVID;
+$COLOR_DEFAULT_SECONDARY: $COLOR_PURPLE_LIVE;
+$COLOR_DEFAULT_POINT: $COLOR_EMBER;
 $COLOR_DEFAULT_BACKGROUND: #ffffff;
 
 $COLOR_DARK_PRIMARY: #03c0e4;
@@ -11,28 +20,23 @@ $COLOR_DEFAULT_DARK: rgba(0, 0, 0, 0.839);
 $COLOR_DEFAULT_ASHGRAY: rgba(0, 0, 0, 0.541);
 $COLOR_DEFAULT_GRAY: rgba(160, 160, 160, 0.541);
 
-$FONT_SERIF: 'Noto Serif KR', serif;
-$FONT_GOTHIC: -apple-system, BlinkMacSystemFont, 'Spoqa Han Sans Neo', sans-serif;
+$FONT_SIZE_MINI: 1.6rem;
+$FONT_SIZE_TINY: 1.8rem;
+$FONT_SIZE_SMALL: 2.2rem;
+$FONT_SIZE_NORMAL: 2.4rem;
+$FONT_SIZE_BIG: 3rem;
+$FONT_SIZE_HUGE: 4rem;
+$FONT_SIZE_GIANT: 8rem;
 
-@mixin MAIN_SHADOW {
+@mixin SHADOW_PRIMARY {
     box-shadow: 0 2px 16px 0 hsla(0, 0%, 0%, 0.1);
-
-    :global(body.dark) & {
-        box-shadow: none;
-        border: 1px solid #333;
-    }
 }
 
-@mixin SUB_SHADOW {
+@mixin SHADOW_SECONDARY {
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.1);
-
-    :global(body.dark) & {
-        box-shadow: none;
-        border: 1px solid #3a3a3a;
-    }
 }
 
 @mixin CARD {
-    @include MAIN_SHADOW;
+    @include SHADOW_PRIMAEY;
     border-radius: 8px;
 }

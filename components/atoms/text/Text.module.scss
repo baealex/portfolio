@@ -1,0 +1,33 @@
+@import 'var';
+
+$fontSizes: (
+    'mini': $FONT_SIZE_MINI,
+    'tiny': $FONT_SIZE_TINY,
+    'small': $FONT_SIZE_SMALL,
+    'normal': $FONT_SIZE_NORMAL,
+    'big': $FONT_SIZE_BIG,
+    'huge': $FONT_SIZE_HUGE,
+    'giant': $FONT_SIZE_GIANT,
+);
+
+.text {
+    $weight: 7;
+    
+    @for $i from 1 through $weight {
+        &.fw-#{$i} {
+            font-weight: ($i * 100);
+        }
+    }
+
+    @each $sizeName, $size in $fontSizes {
+        &.size-#{$sizeName} {
+            font-size: $size;
+        }
+    }
+
+    &.headline {
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $COLOR_PURPLE_WHITE;
+    }
+}
