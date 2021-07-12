@@ -26,11 +26,8 @@ export default function Home() {
                             <Text fontSize="small" fontWeight={400}>
                                 서울에서 일하고 있는 2년차 웹 개발자입니다.
                                 무형의 아이디어가 시각적으로 실현되는 과정을 즐거워 합니다.
-                                기록하는 것을 좋아하여 블로그에 많은 관심을 가지고 있습니다.{' '}
-                                <a className="vivid-purple" href="https://blex.me/@baealex/pythonic%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">
-                                    파이써닉
-                                </a>
-                                한 코드를 작성하기 위해 노력합니다.
+                                기록하는 것을 좋아하여 블로그에 많은 관심을 가지고 있습니다.
+                                글처럼 착착 읽혀지는 <a className="vivid-purple" href="https://blex.me/@baealex/pythonic%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">파이써닉</a>한 코드를 작성하기 위해 노력합니다.
                             </Text>
                         </div>
                         <div className="mt-5">
